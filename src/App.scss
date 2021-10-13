@@ -1,0 +1,48 @@
+.wrapper-form-add form {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+
+    .wrapper-input,
+    .wrapper-button,
+    .wrapper-label {
+        padding: 5px;
+    }
+
+    .wrapper-label {
+        font-weight: 700;
+    }
+}
+
+.wrapper-filter form{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+
+    .wrapper-filter-item {
+        padding: 10px;
+    }
+}
+
+.wrapper-box {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+    .box-item {
+        .box-item-block {
+            width: 150px;
+            height: 150px;
+            background-color: attr(data-color color);
+        }
+
+        .box-item-detail {
+            display: flex;
+            justify-content: space-between;
+
+            .box-item-detail-close {
+                cursor: pointer;
+            }
+        }
+    }
+}
